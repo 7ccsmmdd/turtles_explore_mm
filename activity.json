@@ -82,7 +82,7 @@
                     "buttons": [
                         {
                             "id": "to_mm_diagram",
-                            "icon": "diagram_generate",
+                            "icon": "diagram-generate",
                             "actionfunction": "function-ecoretodiagram",
                             "hint": "Show the meta-model diagram"
                         }
