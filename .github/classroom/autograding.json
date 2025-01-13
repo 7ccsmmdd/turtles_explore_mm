@@ -1,0 +1,24 @@
+{
+  "tests": [
+    {
+      "name": "Meta-model test (checks for REAL degrees in turn statements)",
+      "setup": "",
+      "run": "mvn -q -B -DfailIfNoTests=false -Dtest=MetaModelTest verify",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Grammar test (checking that the syntax for reals is correct)",
+      "setup": "",
+      "run": "mvn -q -B -DfailIfNoTests=false -Dtest=FloatTurnExpTest verify",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    }
+  ]
+}
