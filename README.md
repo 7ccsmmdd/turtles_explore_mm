@@ -2,6 +2,13 @@
 
 Use this repository to explore the meta-model for the Turtles language as shown in the videos. Later, you will also use this same repository to add support for REAL values for the turn degree in turn statements -- and the autograding will test for this. Eventually, your auto-grading should pass and assign 20/20 points.
 
+``
+To work around an annoying and long-standing GitHub Classroom bug and get the autograder to work reliably, you will have to undertake a couple of extra steps:
+
+1. Open [classroom.yml](.github/workflows/classroom.yml) and click on the little pencil symbol to edit the file.
+2. Add a space somewhere and remove it again (yes, that means the file content won't have changed), then click on the "Commit..." button that has now become enabled. Accept the standard choices and commit. This should allow the auto-grader to run in the future.
+``
+
 ### Using the repository
 
 There are two ways to do this activity:
