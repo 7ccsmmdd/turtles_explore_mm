@@ -1,0 +1,48 @@
+grammar uk.ac.kcl.inf.mdd2.Turtles with org.eclipse.xtext.common.Terminals
+
+generate turtles "http://www.ac.uk/kcl/inf/mdd2/Turtles"
+
+
+import "http://www.eclipse.org/emf/2002/Ecore" as ecore
+
+TurtleProgram:
+	statements += Statement*
+;
+	
+Statement:
+	MoveStatement |
+	TurnStatement |
+	LoopStatement |
+	VariableDeclaration
+;
+
+VariableDeclaration:
+	"var" name=ID "=" value=INT
+;
+
+LoopStatement:
+	count = IntExpression "times" "do"
+	  statements += Statement+
+	"end"
+;
+
+MoveStatement:
+	command = MoveCommand "(" steps = IntExpression ")"
+;
+
+enum MoveCommand:
+	forward | backward
+;
+
+TurnStatement:
+	"turn" command = TurnCommand "by" degrees = INT "degrees"
+;
+
+enum TurnCommand:
+	left | right
+;
+
+IntExpression:
+	val = INT |
+	var = [VariableDeclaration]
+;

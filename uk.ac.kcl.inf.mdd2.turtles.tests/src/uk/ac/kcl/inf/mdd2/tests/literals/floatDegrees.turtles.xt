@@ -1,0 +1,5 @@
+/* XPECT_SETUP uk.ac.kcl.inf.mdd2.tests.literals.FloatTurnExpTest  END_SETUP */
+turn right by 1.0 degrees
+forward(10)
+forward(10)
+turn left by 360.1 degrees
